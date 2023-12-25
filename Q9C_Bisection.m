@@ -1,0 +1,37 @@
+clc
+clear all
+
+a1=2;
+b1=5;
+e1=(1/1000);
+
+while abs(b1-a1)>=e1
+    z1=(a1+b1)/2;
+    f1=exp(z1)-(3*z1^2);
+    if f1<0
+        a1=z1;
+    else
+        b1=z1;
+    end
+
+end
+a1
+b1
+
+
+a2=-2;
+b2=5;
+e2=(1/1000);
+
+while abs(b2-a2)>e2
+    z2=(a2+b2)/2;
+    f2=exp(z2)-(3*z2^2);
+    if f2<0
+        a2=z2;
+    else
+        b2=z2;
+    end
+
+end
+a2
+b2
